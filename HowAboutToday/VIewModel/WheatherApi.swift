@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 import Combine
 import SwiftUI
+import CoreLocation
 
 
 protocol wheatherDelegate{
@@ -24,6 +25,11 @@ struct WheatherAPIManger {
         let urlString : String  = "\(API)&timezone\(timezone)"
         performanceRequest(with: urlString)
     }
+
+    
+
+
+    
     //    func fetchWeather(cityName: String) {
     //        let urlString = "\(API)&q =\(cityName)"
     //        performanceRequest(with: urlString)
@@ -72,6 +78,24 @@ struct WheatherAPIManger {
         }
     }
 }
+
+//extension URL{
+//// 도시 이름으로 날씨 정보 가져오기
+//func urlWith(city: String) -> URL? {
+//     return URL(string: "\(API)&timezone=\(timezone)")
+// }
+//
+//// 위치 정보로 날씨 정보 가져오기
+//func urlWith(coordinate : CLLocationCoordinate2D) -> URL? {
+//       let urlString = "\(API)&lat=\(coordinate.latitude)&lon=\(coordinate.longitude)"
+//       print(urlString)
+//       return URL(string: urlString)
+//   }
+//}
+
+    
+
+    
 
 
 

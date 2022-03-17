@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7548E55027E1CE980070AE76 /* wheatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7548E54F27E1CE980070AE76 /* wheatherData.swift */; };
+		7548E55227E2F91A0070AE76 /* WeatherViewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7548E55127E2F91A0070AE76 /* WeatherViewDetail.swift */; };
+		7548E55527E30DE60070AE76 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7548E55427E30DE60070AE76 /* LocationService.swift */; };
+		7548E55B27E31FC70070AE76 /* CoreLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7548E55A27E31FC70070AE76 /* CoreLocation.swift */; };
 		754F6D1627E064B200F2F316 /* HowAboutTodayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F6D1527E064B200F2F316 /* HowAboutTodayApp.swift */; };
 		754F6D1827E064B200F2F316 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F6D1727E064B200F2F316 /* ContentView.swift */; };
 		754F6D1A27E064B300F2F316 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754F6D1927E064B300F2F316 /* Assets.xcassets */; };
@@ -39,6 +42,10 @@
 
 /* Begin PBXFileReference section */
 		7548E54F27E1CE980070AE76 /* wheatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wheatherData.swift; sourceTree = "<group>"; };
+		7548E55127E2F91A0070AE76 /* WeatherViewDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewDetail.swift; sourceTree = "<group>"; };
+		7548E55327E306680070AE76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7548E55427E30DE60070AE76 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		7548E55A27E31FC70070AE76 /* CoreLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocation.swift; sourceTree = "<group>"; };
 		754F6D1227E064B200F2F316 /* HowAboutToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HowAboutToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		754F6D1527E064B200F2F316 /* HowAboutTodayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowAboutTodayApp.swift; sourceTree = "<group>"; };
 		754F6D1727E064B200F2F316 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +109,7 @@
 		754F6D1427E064B200F2F316 /* HowAboutToday */ = {
 			isa = PBXGroup;
 			children = (
+				7548E55327E306680070AE76 /* Info.plist */,
 				754F6D4227E064E500F2F316 /* ThirdParty */,
 				754F6D4127E064CB00F2F316 /* Model */,
 				754F6D4027E064C700F2F316 /* VIewModel */,
@@ -142,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				754F6D1727E064B200F2F316 /* ContentView.swift */,
+				7548E55127E2F91A0070AE76 /* WeatherViewDetail.swift */,
 			);
 			path = VIew;
 			sourceTree = "<group>";
@@ -149,7 +158,10 @@
 		754F6D4027E064C700F2F316 /* VIewModel */ = {
 			isa = PBXGroup;
 			children = (
+				754F6D4327E06F3700F2F316 /* WheatherApi.swift */,
 				754F6D4527E07EF800F2F316 /* wheatherInput.swift */,
+				7548E55427E30DE60070AE76 /* LocationService.swift */,
+				7548E55A27E31FC70070AE76 /* CoreLocation.swift */,
 			);
 			path = VIewModel;
 			sourceTree = "<group>";
@@ -157,7 +169,6 @@
 		754F6D4127E064CB00F2F316 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				754F6D4327E06F3700F2F316 /* WheatherApi.swift */,
 				754F6D4727E1AC8700F2F316 /* WheatherInfo.swift */,
 				7548E54F27E1CE980070AE76 /* wheatherData.swift */,
 			);
@@ -302,11 +313,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				754F6D4427E06F3700F2F316 /* WheatherApi.swift in Sources */,
+				7548E55227E2F91A0070AE76 /* WeatherViewDetail.swift in Sources */,
+				7548E55527E30DE60070AE76 /* LocationService.swift in Sources */,
 				754F6D1827E064B200F2F316 /* ContentView.swift in Sources */,
 				754F6D4627E07EF800F2F316 /* wheatherInput.swift in Sources */,
 				754F6D4827E1AC8700F2F316 /* WheatherInfo.swift in Sources */,
 				754F6D1627E064B200F2F316 /* HowAboutTodayApp.swift in Sources */,
 				7548E55027E1CE980070AE76 /* wheatherData.swift in Sources */,
+				7548E55B27E31FC70070AE76 /* CoreLocation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +484,8 @@
 				DEVELOPMENT_TEAM = 7N2TRX73U6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HowAboutToday/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Cloud i get your location information?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -499,6 +515,8 @@
 				DEVELOPMENT_TEAM = 7N2TRX73U6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HowAboutToday/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Cloud i get your location information?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
