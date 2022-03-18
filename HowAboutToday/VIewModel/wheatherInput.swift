@@ -6,7 +6,3 @@
 //
 
 import Foundation
-
-func fetchWeather (cityName: timezone){
-    
-}

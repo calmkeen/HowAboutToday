@@ -11,6 +11,7 @@
 		7548E55227E2F91A0070AE76 /* WeatherViewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7548E55127E2F91A0070AE76 /* WeatherViewDetail.swift */; };
 		7548E55527E30DE60070AE76 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7548E55427E30DE60070AE76 /* LocationService.swift */; };
 		7548E55B27E31FC70070AE76 /* CoreLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7548E55A27E31FC70070AE76 /* CoreLocation.swift */; };
+		7548E59A27E46F070070AE76 /* SearchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7548E59927E46F070070AE76 /* SearchList.swift */; };
 		754F6D1627E064B200F2F316 /* HowAboutTodayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F6D1527E064B200F2F316 /* HowAboutTodayApp.swift */; };
 		754F6D1827E064B200F2F316 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F6D1727E064B200F2F316 /* ContentView.swift */; };
 		754F6D1A27E064B300F2F316 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754F6D1927E064B300F2F316 /* Assets.xcassets */; };
@@ -21,6 +22,9 @@
 		754F6D4427E06F3700F2F316 /* WheatherApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F6D4327E06F3700F2F316 /* WheatherApi.swift */; };
 		754F6D4627E07EF800F2F316 /* wheatherInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F6D4527E07EF800F2F316 /* wheatherInput.swift */; };
 		754F6D4827E1AC8700F2F316 /* WheatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F6D4727E1AC8700F2F316 /* WheatherInfo.swift */; };
+		758ECD8727E475210019517F /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758ECD8627E475210019517F /* SearchModel.swift */; };
+		758ECD8927E47BB60019517F /* MapLocationSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758ECD8827E47BB60019517F /* MapLocationSearch.swift */; };
+		758ECD8B27E47C1F0019517F /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758ECD8A27E47C1F0019517F /* MapModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,7 @@
 		7548E55327E306680070AE76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7548E55427E30DE60070AE76 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		7548E55A27E31FC70070AE76 /* CoreLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocation.swift; sourceTree = "<group>"; };
+		7548E59927E46F070070AE76 /* SearchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchList.swift; sourceTree = "<group>"; };
 		754F6D1227E064B200F2F316 /* HowAboutToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HowAboutToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		754F6D1527E064B200F2F316 /* HowAboutTodayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowAboutTodayApp.swift; sourceTree = "<group>"; };
 		754F6D1727E064B200F2F316 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +64,9 @@
 		754F6D4327E06F3700F2F316 /* WheatherApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherApi.swift; sourceTree = "<group>"; };
 		754F6D4527E07EF800F2F316 /* wheatherInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wheatherInput.swift; sourceTree = "<group>"; };
 		754F6D4727E1AC8700F2F316 /* WheatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherInfo.swift; sourceTree = "<group>"; };
+		758ECD8627E475210019517F /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		758ECD8827E47BB60019517F /* MapLocationSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationSearch.swift; sourceTree = "<group>"; };
+		758ECD8A27E47C1F0019517F /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +159,8 @@
 			children = (
 				754F6D1727E064B200F2F316 /* ContentView.swift */,
 				7548E55127E2F91A0070AE76 /* WeatherViewDetail.swift */,
+				7548E59927E46F070070AE76 /* SearchList.swift */,
+				758ECD8827E47BB60019517F /* MapLocationSearch.swift */,
 			);
 			path = VIew;
 			sourceTree = "<group>";
@@ -171,6 +181,8 @@
 			children = (
 				754F6D4727E1AC8700F2F316 /* WheatherInfo.swift */,
 				7548E54F27E1CE980070AE76 /* wheatherData.swift */,
+				758ECD8627E475210019517F /* SearchModel.swift */,
+				758ECD8A27E47C1F0019517F /* MapModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -313,14 +325,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				754F6D4427E06F3700F2F316 /* WheatherApi.swift in Sources */,
+				758ECD8B27E47C1F0019517F /* MapModel.swift in Sources */,
 				7548E55227E2F91A0070AE76 /* WeatherViewDetail.swift in Sources */,
 				7548E55527E30DE60070AE76 /* LocationService.swift in Sources */,
+				7548E59A27E46F070070AE76 /* SearchList.swift in Sources */,
 				754F6D1827E064B200F2F316 /* ContentView.swift in Sources */,
 				754F6D4627E07EF800F2F316 /* wheatherInput.swift in Sources */,
+				758ECD8727E475210019517F /* SearchModel.swift in Sources */,
 				754F6D4827E1AC8700F2F316 /* WheatherInfo.swift in Sources */,
 				754F6D1627E064B200F2F316 /* HowAboutTodayApp.swift in Sources */,
 				7548E55027E1CE980070AE76 /* wheatherData.swift in Sources */,
 				7548E55B27E31FC70070AE76 /* CoreLocation.swift in Sources */,
+				758ECD8927E47BB60019517F /* MapLocationSearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
