@@ -23,10 +23,13 @@ struct ContentView: View {
             VStack{
                 //Text("Can i get your location Info?\(name)")
                 Text("").searchable(text: $name)
-                NavigationLink(destination: WeatherViewDetail()){
+                //지도
+                NavigationLink(destination: MapLocationSearch()){
                     switch locationViewModel.authorizationStatus {
                     case .notDetermined:
-                        AnyView(RequestLocationView())
+                        //여기였네
+                        Image(systemName: "location")
+                        Text("asdf")
                             .environmentObject(locationViewModel)
                     case .restricted:
                         ErrorView(errorText: "Location use is restricted.")
@@ -39,44 +42,43 @@ struct ContentView: View {
                         Text("Unexpected status")
                     }
                 }
-//                Button(action: {
-//                    locationViewModel.requestPermission()
-//                }, label: {
-//                    Label("Allow tracking", systemImage: "location")
-//                })
-                
-                
+                NavigationLink(destination: BookMarkList()){
+                    Image(systemName: "bookmark")
+                    Text("bookmark")
+                }
+                NavigationLink(destination: SearchList()){
+                    Image(systemName: "magnifyingglass")
+                    Text("searchList")
+                }
             }
             .navigationBarTitle("HowaboutToday")
             Spacer()
             
+            
         }
 }
 }
-    struct RequestLocationView: View {
-        @EnvironmentObject var locationViewModel: LocationViewModel
-        
-        var body: some View {
-            VStack {
-                Image(systemName: "location.circle")
-                    .resizable()
-                    .frame(width: 100, height: 100, alignment: .center)
-                    .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
-                Button(action: {
-                    print("allowing perms")
-                }, label: {
-                    Label("Allow tracking", systemImage: "location")
-                })
-                .padding(10)
-                .foregroundColor(.white)
-                .background(Color.blue)
-                .clipShape(RoundedRectangle(cornerRadius: 8))
-                Text("We need your permission to track you.")
-                    .foregroundColor(.gray)
-                    .font(.caption)
-            }
-        }
-    }
+//    struct RequestLocationView: View {
+//        @EnvironmentObject var locationViewModel: LocationViewModel
+//
+//        var body: some View {
+//            VStack {
+//                Button(action: {
+////                    print("allowing perms")
+//                }, label: {
+//                    Label("Allow tracking", systemImage: "location")
+//                })
+//                .padding(10)
+//                .foregroundColor(.white)
+//                .background(Color.blue)
+//                .clipShape(RoundedRectangle(cornerRadius: 8))
+//                Text("We need your permission to track you.")
+//                    .foregroundColor(.gray)
+//                    .font(.caption)
+//
+//            }
+//        }
+//    }
 
 struct ErrorView: View {
     var errorText: String
@@ -103,35 +105,6 @@ struct TrackingView: View {
 }
         
 
-        
-
-        //MARK: - after ios 15
-        
-        
-        //MARK: - befor ios15
-//        TextField("Search City...",text: WheatherAPIManger) {
-//            if let city = TextField.text{
-//                wheatherManger.fetchWeather(cityName: city)
-//            }
-//            TextField.text = ""
-//        }
-
-
-
-//extension ContentView: wheatherDelegate{
-//    func uploadWheatherManger(_ WheatherAPIManger: WheatherAPIManger, wheather: WheatherInfo) {
-//        DispatchQueue.main.async {
-//
-//        }
-//    }
-//
-//    func didfailwithError(error: Error) {
-//        print(error)
-//    }
-//
-//
-//}
-//
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

@@ -25,6 +25,8 @@
 		758ECD8727E475210019517F /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758ECD8627E475210019517F /* SearchModel.swift */; };
 		758ECD8927E47BB60019517F /* MapLocationSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758ECD8827E47BB60019517F /* MapLocationSearch.swift */; };
 		758ECD8B27E47C1F0019517F /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758ECD8A27E47C1F0019517F /* MapModel.swift */; };
+		758ECD8D27E9940E0019517F /* BookMarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758ECD8C27E9940E0019517F /* BookMarkList.swift */; };
+		758ECD8F27E994300019517F /* BookMarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758ECD8E27E994300019517F /* BookMarkModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		758ECD8627E475210019517F /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
 		758ECD8827E47BB60019517F /* MapLocationSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationSearch.swift; sourceTree = "<group>"; };
 		758ECD8A27E47C1F0019517F /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
+		758ECD8C27E9940E0019517F /* BookMarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkList.swift; sourceTree = "<group>"; };
+		758ECD8E27E994300019517F /* BookMarkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +165,7 @@
 				7548E55127E2F91A0070AE76 /* WeatherViewDetail.swift */,
 				7548E59927E46F070070AE76 /* SearchList.swift */,
 				758ECD8827E47BB60019517F /* MapLocationSearch.swift */,
+				758ECD8C27E9940E0019517F /* BookMarkList.swift */,
 			);
 			path = VIew;
 			sourceTree = "<group>";
@@ -183,6 +188,7 @@
 				7548E54F27E1CE980070AE76 /* wheatherData.swift */,
 				758ECD8627E475210019517F /* SearchModel.swift */,
 				758ECD8A27E47C1F0019517F /* MapModel.swift */,
+				758ECD8E27E994300019517F /* BookMarkModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -336,7 +342,9 @@
 				754F6D1627E064B200F2F316 /* HowAboutTodayApp.swift in Sources */,
 				7548E55027E1CE980070AE76 /* wheatherData.swift in Sources */,
 				7548E55B27E31FC70070AE76 /* CoreLocation.swift in Sources */,
+				758ECD8F27E994300019517F /* BookMarkModel.swift in Sources */,
 				758ECD8927E47BB60019517F /* MapLocationSearch.swift in Sources */,
+				758ECD8D27E9940E0019517F /* BookMarkList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

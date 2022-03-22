@@ -15,15 +15,17 @@ struct SearchList: View {
             List{
 //                ForEach(searchModel, id \.self){ data in
 //                    Text(data.title)
-                    
-                }
+                
+                Text(searchModel.d)
+                //}
                 
             }
             .listStyle(.plain)
             .navigationTitle("검색 리스트 페이지")
         }
-        //.searchable(text: $searchText)
+        .searchable(text: $searchText)
     }
+}
 
 
 struct SearchList_Previews: PreviewProvider {
