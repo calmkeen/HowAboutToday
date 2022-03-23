@@ -11,6 +11,7 @@ struct WeatherViewDetail: View {
     
     @Environment(\.presentationMode) var presentationMode
     @StateObject var locationViewModel = LocationViewModel()
+    @State private var showNew = false
     
     var body: some View {
         NavigationView{
@@ -40,6 +41,11 @@ struct WeatherViewDetail: View {
                     }
                     Spacer()
                 }
+                .background(
+                       NavigationLink(destination: MapLocationSearch(), isActive: $showNew) {
+                         EmptyView()
+                       }
+                   )
                 .navigationTitle("일단 네비게이션 구분")
                 .toolbar{
                     ToolbarItemGroup(placement: ToolbarItemPlacement.navigationBarLeading){
@@ -66,7 +72,7 @@ struct WeatherViewDetail: View {
                     ToolbarItemGroup(placement: ToolbarItemPlacement.bottomBar){
                         
                         Button(action: {
-                            
+                            self.showNew = true
                         }, label: {
                             Image(systemName: "map")
                         })
