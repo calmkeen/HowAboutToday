@@ -10,22 +10,41 @@ import SwiftUI
 struct SearchList: View {
     @State var searchText = ""
     @StateObject var searchModel = list_test()
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
-        NavigationView{
-            List{
-//                ForEach(searchModel, id \.self){ data in
-//                    Text(data.title)
-                
-                Text(searchModel.d)
-                //}
-                
+        ZStack(alignment: .topLeading) {
+            Color.white.ignoresSafeArea()
+                .navigationBarBackButtonHidden(true)
+                .navigationBarHidden(true)
+            
+            NavigationView{
+                List{
+    //                ForEach(searchModel, id \.self){ data in
+    //                    Text(data.title)
+                    
+                    Text(searchModel.d)
+                    //}
+                    
+                }
+                .listStyle(.plain)
+                .navigationTitle("검색 리스트 페이지")
             }
-            .listStyle(.plain)
-            .navigationTitle("검색 리스트 페이지")
+            .searchable(text: $searchText)
+            Button(action: {
+                presentationMode.wrappedValue.dismiss()
+            }, label: {
+                Image(systemName: "xmark")
+                    .imageScale(.large)
+                    .padding()
+            })
+            .accentColor(.blue)
         }
-        .searchable(text: $searchText)
+        }
     }
-}
+            
+            
+
 
 
 struct SearchList_Previews: PreviewProvider {

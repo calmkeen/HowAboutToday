@@ -11,21 +11,7 @@ struct BookMarkList: View {
     @Environment(\.presentationMode) var presentationMode
     @State var bookmarklist = [MarkUp]
     var body: some View {
-        // ========== x버튼
-//        ZStack(alignment: .topLeading) {
-//            Color.white.ignoresSafeArea()
-//                .navigationBarBackButtonHidden(true)
-//                .navigationBarHidden(true)
-//
-//            Button(action: {
-//                presentationMode.wrappedValue.dismiss()
-//            }, label: {
-//                Image(systemName: "xmark")
-//                    .imageScale(.large)
-//                    .padding()
-//            })
-//            .accentColor(.white)
-            //여기까지
+        NavigationView{
             List{
                 ForEach(bookmarkList, id: \.self){ location in
                     HStack{
@@ -37,12 +23,17 @@ struct BookMarkList: View {
                     }
                     
                 }
+                .onDelete(perform: removeRows)
             }
+            .navigationBarItems(leading: EditButton())
         }
         
-        
     }
-//}
+}
+func removeRows(at offsets: IndexSet) {
+    bookmarkList.remove(atOffsets: offsets)
+}
+
 
 struct BookMarkList_Previews: PreviewProvider {
     static var previews: some View {

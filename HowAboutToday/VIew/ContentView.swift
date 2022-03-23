@@ -43,12 +43,16 @@ struct ContentView: View {
                     }
                 }
                 NavigationLink(destination: BookMarkList()){
-                    Image(systemName: "bookmark")
+                    Image(systemName: "bookmark").buttonStyle(PlainButtonStyle())
                     Text("bookmark")
                 }
                 NavigationLink(destination: SearchList()){
                     Image(systemName: "magnifyingglass")
                     Text("searchList")
+                }
+                NavigationLink(destination: WeatherViewDetail()){
+                    Image(systemName: "cloud.sun.bolt.fill")
+                    Text("weatherDetail")
                 }
             }
             .navigationBarTitle("HowaboutToday")

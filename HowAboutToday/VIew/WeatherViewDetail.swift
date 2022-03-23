@@ -8,8 +8,84 @@
 import SwiftUI
 
 struct WeatherViewDetail: View {
+    
+    @Environment(\.presentationMode) var presentationMode
+    @StateObject var locationViewModel = LocationViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            ScrollView{
+                VStack{
+                    Spacer()
+                VStack{
+                    Text("title")
+                    Text("날씨 아이콘")
+                    Text("온도")
+                }
+                    Spacer()
+                HStack{
+                    Text("1~3")
+                    Text("3~6")
+                    Text("6~9")
+                }
+                    Spacer()
+                    VStack{
+                        Text("이후10일 날씨1")
+                        Text("이후10일 날씨1")
+                        Text("이후10일 날씨1")
+                        Text("이후10일 날씨1")
+                        Text("이후10일 날씨1")
+                        Text("이후10일 날씨1")
+                        Text("이후10일 날씨1")
+                    }
+                    Spacer()
+                }
+                .navigationTitle("일단 네비게이션 구분")
+                .toolbar{
+                    ToolbarItemGroup(placement: ToolbarItemPlacement.navigationBarLeading){
+                        
+                        Button(action: {
+                            presentationMode.wrappedValue.dismiss()
+                        }, label: {
+                            Image(systemName: "chevron.backward")
+                        })
+                    }
+                }
+                .toolbar{
+                    ToolbarItemGroup(placement: ToolbarItemPlacement.navigationBarTrailing){
+                        
+                        Button(action: {
+                            
+                        }, label: {
+                            Image(systemName: "bookmark")
+                        })
+
+                    }
+                }
+                .toolbar{
+                    ToolbarItemGroup(placement: ToolbarItemPlacement.bottomBar){
+                        
+                        Button(action: {
+                            
+                        }, label: {
+                            Image(systemName: "map")
+                        })
+                        Button(action: {
+                            
+                        }, label: {
+                            Image(systemName:"list.star")
+                        })
+
+                    }
+                }
+            }
+
+            
+        }
+        .navigationBarBackButtonHidden(true)
+        .navigationBarHidden(true)
+        //navigationEnd
+        
     }
 }
 
