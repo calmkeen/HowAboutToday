@@ -12,10 +12,14 @@ import SwiftUI
  private var searchText = ""
 
 class list_test: NSObject,ObservableObject{
-    var a : String = "test a"
-    var b : String = "test b"
-    var c : String = "test c"
-    var d : String = "test d"
+//    var locationSearch = [bookmark]
+//    init() {
+//
+//        bookmark(location:"hwasung")
+//        bookmark(location:"Suwon")
+//        bookmark(location:"Seoul")
+//        bookmark(location:"Busan")
+ 
 }
 
     var bookmarkList: [bookmark] = [
