@@ -12,11 +12,11 @@ struct WheatherInfo: Codable {
     var conditionId : Int
     var timezone: String
     
-    var tempatureString: String{
-    return String(format:"%.2f",temp)
+    var tempatureString: String {
+        return String(format:"%.2f",temp)
     }
     
-     var WeatherChange : String{
+    var WeatherChange : String{
         switch conditionId {
         case 200...232 :
             return "cloud.blot.rain"

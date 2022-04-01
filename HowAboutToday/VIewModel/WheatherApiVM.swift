@@ -12,7 +12,7 @@ import SwiftUI
 import CoreLocation
 
 
-protocol wheatherDelegate{
+protocol wheatherDelegate {
     func uploadWheatherManger(_ WheatherAPIManger: WheatherAPIManger, wheather: WheatherInfo)
     func didfailwithError(error: Error)
 }
@@ -25,10 +25,6 @@ struct WheatherAPIManger {
         let urlString : String  = "\(API)&timezone\(timezone)"
         performanceRequest(with: urlString)
     }
-
-    
-
-
     
     //    func fetchWeather(cityName: String) {
     //        let urlString = "\(API)&q =\(cityName)"

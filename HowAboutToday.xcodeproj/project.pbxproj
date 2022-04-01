@@ -8,10 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7548E55027E1CE980070AE76 /* wheatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7548E54F27E1CE980070AE76 /* wheatherData.swift */; };
-		7548E55227E2F91A0070AE76 /* WeatherViewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7548E55127E2F91A0070AE76 /* WeatherViewDetail.swift */; };
-		7548E55527E30DE60070AE76 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7548E55427E30DE60070AE76 /* LocationService.swift */; };
-		7548E55B27E31FC70070AE76 /* CoreLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7548E55A27E31FC70070AE76 /* CoreLocation.swift */; };
-		7548E59A27E46F070070AE76 /* SearchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7548E59927E46F070070AE76 /* SearchList.swift */; };
+		7548E55227E2F91A0070AE76 /* WeatherDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7548E55127E2F91A0070AE76 /* WeatherDetailView.swift */; };
+		7548E55B27E31FC70070AE76 /* CoreLocationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7548E55A27E31FC70070AE76 /* CoreLocationVM.swift */; };
+		7548E59A27E46F070070AE76 /* SearchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7548E59927E46F070070AE76 /* SearchListView.swift */; };
 		754F6D1627E064B200F2F316 /* HowAboutTodayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F6D1527E064B200F2F316 /* HowAboutTodayApp.swift */; };
 		754F6D1827E064B200F2F316 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F6D1727E064B200F2F316 /* ContentView.swift */; };
 		754F6D1A27E064B300F2F316 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754F6D1927E064B300F2F316 /* Assets.xcassets */; };
@@ -19,13 +18,13 @@
 		754F6D2727E064B300F2F316 /* HowAboutTodayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F6D2627E064B300F2F316 /* HowAboutTodayTests.swift */; };
 		754F6D3127E064B300F2F316 /* HowAboutTodayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F6D3027E064B300F2F316 /* HowAboutTodayUITests.swift */; };
 		754F6D3327E064B300F2F316 /* HowAboutTodayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F6D3227E064B300F2F316 /* HowAboutTodayUITestsLaunchTests.swift */; };
-		754F6D4427E06F3700F2F316 /* WheatherApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F6D4327E06F3700F2F316 /* WheatherApi.swift */; };
-		754F6D4627E07EF800F2F316 /* wheatherInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F6D4527E07EF800F2F316 /* wheatherInput.swift */; };
-		754F6D4827E1AC8700F2F316 /* WheatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F6D4727E1AC8700F2F316 /* WheatherInfo.swift */; };
+		754F6D4427E06F3700F2F316 /* WheatherApiVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F6D4327E06F3700F2F316 /* WheatherApiVM.swift */; };
+		754F6D4627E07EF800F2F316 /* wheatherInputVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F6D4527E07EF800F2F316 /* wheatherInputVM.swift */; };
+		754F6D4827E1AC8700F2F316 /* WheatherInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F6D4727E1AC8700F2F316 /* WheatherInfoView.swift */; };
 		758ECD8727E475210019517F /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758ECD8627E475210019517F /* SearchModel.swift */; };
-		758ECD8927E47BB60019517F /* MapLocationSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758ECD8827E47BB60019517F /* MapLocationSearch.swift */; };
-		758ECD8B27E47C1F0019517F /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758ECD8A27E47C1F0019517F /* MapModel.swift */; };
-		758ECD8D27E9940E0019517F /* BookMarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758ECD8C27E9940E0019517F /* BookMarkList.swift */; };
+		758ECD8927E47BB60019517F /* MapLocationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758ECD8827E47BB60019517F /* MapLocationSearchView.swift */; };
+		758ECD8B27E47C1F0019517F /* MapVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758ECD8A27E47C1F0019517F /* MapVM.swift */; };
+		758ECD8D27E9940E0019517F /* BookMarkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758ECD8C27E9940E0019517F /* BookMarkListView.swift */; };
 		758ECD8F27E994300019517F /* BookMarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758ECD8E27E994300019517F /* BookMarkModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,11 +47,10 @@
 
 /* Begin PBXFileReference section */
 		7548E54F27E1CE980070AE76 /* wheatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wheatherData.swift; sourceTree = "<group>"; };
-		7548E55127E2F91A0070AE76 /* WeatherViewDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewDetail.swift; sourceTree = "<group>"; };
+		7548E55127E2F91A0070AE76 /* WeatherDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailView.swift; sourceTree = "<group>"; };
 		7548E55327E306680070AE76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		7548E55427E30DE60070AE76 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
-		7548E55A27E31FC70070AE76 /* CoreLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocation.swift; sourceTree = "<group>"; };
-		7548E59927E46F070070AE76 /* SearchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchList.swift; sourceTree = "<group>"; };
+		7548E55A27E31FC70070AE76 /* CoreLocationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationVM.swift; sourceTree = "<group>"; };
+		7548E59927E46F070070AE76 /* SearchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListView.swift; sourceTree = "<group>"; };
 		754F6D1227E064B200F2F316 /* HowAboutToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HowAboutToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		754F6D1527E064B200F2F316 /* HowAboutTodayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowAboutTodayApp.swift; sourceTree = "<group>"; };
 		754F6D1727E064B200F2F316 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,13 +61,13 @@
 		754F6D2C27E064B300F2F316 /* HowAboutTodayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HowAboutTodayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		754F6D3027E064B300F2F316 /* HowAboutTodayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowAboutTodayUITests.swift; sourceTree = "<group>"; };
 		754F6D3227E064B300F2F316 /* HowAboutTodayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowAboutTodayUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		754F6D4327E06F3700F2F316 /* WheatherApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherApi.swift; sourceTree = "<group>"; };
-		754F6D4527E07EF800F2F316 /* wheatherInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wheatherInput.swift; sourceTree = "<group>"; };
-		754F6D4727E1AC8700F2F316 /* WheatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherInfo.swift; sourceTree = "<group>"; };
+		754F6D4327E06F3700F2F316 /* WheatherApiVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherApiVM.swift; sourceTree = "<group>"; };
+		754F6D4527E07EF800F2F316 /* wheatherInputVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wheatherInputVM.swift; sourceTree = "<group>"; };
+		754F6D4727E1AC8700F2F316 /* WheatherInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherInfoView.swift; sourceTree = "<group>"; };
 		758ECD8627E475210019517F /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
-		758ECD8827E47BB60019517F /* MapLocationSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationSearch.swift; sourceTree = "<group>"; };
-		758ECD8A27E47C1F0019517F /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
-		758ECD8C27E9940E0019517F /* BookMarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkList.swift; sourceTree = "<group>"; };
+		758ECD8827E47BB60019517F /* MapLocationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationSearchView.swift; sourceTree = "<group>"; };
+		758ECD8A27E47C1F0019517F /* MapVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVM.swift; sourceTree = "<group>"; };
+		758ECD8C27E9940E0019517F /* BookMarkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkListView.swift; sourceTree = "<group>"; };
 		758ECD8E27E994300019517F /* BookMarkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarkModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,12 +119,12 @@
 		754F6D1427E064B200F2F316 /* HowAboutToday */ = {
 			isa = PBXGroup;
 			children = (
+				754F6D1527E064B200F2F316 /* HowAboutTodayApp.swift */,
 				7548E55327E306680070AE76 /* Info.plist */,
 				754F6D4227E064E500F2F316 /* ThirdParty */,
 				754F6D4127E064CB00F2F316 /* Model */,
 				754F6D4027E064C700F2F316 /* VIewModel */,
 				754F6D3F27E064B900F2F316 /* VIew */,
-				754F6D1527E064B200F2F316 /* HowAboutTodayApp.swift */,
 				754F6D1927E064B300F2F316 /* Assets.xcassets */,
 				754F6D1B27E064B300F2F316 /* Preview Content */,
 			);
@@ -162,10 +160,10 @@
 			isa = PBXGroup;
 			children = (
 				754F6D1727E064B200F2F316 /* ContentView.swift */,
-				7548E55127E2F91A0070AE76 /* WeatherViewDetail.swift */,
-				7548E59927E46F070070AE76 /* SearchList.swift */,
-				758ECD8827E47BB60019517F /* MapLocationSearch.swift */,
-				758ECD8C27E9940E0019517F /* BookMarkList.swift */,
+				7548E55127E2F91A0070AE76 /* WeatherDetailView.swift */,
+				7548E59927E46F070070AE76 /* SearchListView.swift */,
+				758ECD8827E47BB60019517F /* MapLocationSearchView.swift */,
+				758ECD8C27E9940E0019517F /* BookMarkListView.swift */,
 			);
 			path = VIew;
 			sourceTree = "<group>";
@@ -173,10 +171,10 @@
 		754F6D4027E064C700F2F316 /* VIewModel */ = {
 			isa = PBXGroup;
 			children = (
-				754F6D4327E06F3700F2F316 /* WheatherApi.swift */,
-				754F6D4527E07EF800F2F316 /* wheatherInput.swift */,
-				7548E55427E30DE60070AE76 /* LocationService.swift */,
-				7548E55A27E31FC70070AE76 /* CoreLocation.swift */,
+				758ECD8A27E47C1F0019517F /* MapVM.swift */,
+				754F6D4327E06F3700F2F316 /* WheatherApiVM.swift */,
+				754F6D4527E07EF800F2F316 /* wheatherInputVM.swift */,
+				7548E55A27E31FC70070AE76 /* CoreLocationVM.swift */,
 			);
 			path = VIewModel;
 			sourceTree = "<group>";
@@ -184,10 +182,9 @@
 		754F6D4127E064CB00F2F316 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				754F6D4727E1AC8700F2F316 /* WheatherInfo.swift */,
+				754F6D4727E1AC8700F2F316 /* WheatherInfoView.swift */,
 				7548E54F27E1CE980070AE76 /* wheatherData.swift */,
 				758ECD8627E475210019517F /* SearchModel.swift */,
-				758ECD8A27E47C1F0019517F /* MapModel.swift */,
 				758ECD8E27E994300019517F /* BookMarkModel.swift */,
 			);
 			path = Model;
@@ -330,21 +327,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				754F6D4427E06F3700F2F316 /* WheatherApi.swift in Sources */,
-				758ECD8B27E47C1F0019517F /* MapModel.swift in Sources */,
-				7548E55227E2F91A0070AE76 /* WeatherViewDetail.swift in Sources */,
-				7548E55527E30DE60070AE76 /* LocationService.swift in Sources */,
-				7548E59A27E46F070070AE76 /* SearchList.swift in Sources */,
+				754F6D4427E06F3700F2F316 /* WheatherApiVM.swift in Sources */,
+				758ECD8B27E47C1F0019517F /* MapVM.swift in Sources */,
+				7548E55227E2F91A0070AE76 /* WeatherDetailView.swift in Sources */,
+				7548E59A27E46F070070AE76 /* SearchListView.swift in Sources */,
 				754F6D1827E064B200F2F316 /* ContentView.swift in Sources */,
-				754F6D4627E07EF800F2F316 /* wheatherInput.swift in Sources */,
+				754F6D4627E07EF800F2F316 /* wheatherInputVM.swift in Sources */,
 				758ECD8727E475210019517F /* SearchModel.swift in Sources */,
-				754F6D4827E1AC8700F2F316 /* WheatherInfo.swift in Sources */,
+				754F6D4827E1AC8700F2F316 /* WheatherInfoView.swift in Sources */,
 				754F6D1627E064B200F2F316 /* HowAboutTodayApp.swift in Sources */,
 				7548E55027E1CE980070AE76 /* wheatherData.swift in Sources */,
-				7548E55B27E31FC70070AE76 /* CoreLocation.swift in Sources */,
+				7548E55B27E31FC70070AE76 /* CoreLocationVM.swift in Sources */,
 				758ECD8F27E994300019517F /* BookMarkModel.swift in Sources */,
-				758ECD8927E47BB60019517F /* MapLocationSearch.swift in Sources */,
-				758ECD8D27E9940E0019517F /* BookMarkList.swift in Sources */,
+				758ECD8927E47BB60019517F /* MapLocationSearchView.swift in Sources */,
+				758ECD8D27E9940E0019517F /* BookMarkListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

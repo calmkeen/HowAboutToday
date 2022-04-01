@@ -1,10 +1,3 @@
-//
-//  SearchList.swift
-//  HowAboutToday
-//
-//  Created by calmkeen on 2022/03/18.
-//
-
 import SwiftUI
 
 struct SearchList: View {
@@ -30,15 +23,16 @@ struct SearchList: View {
                 .listStyle(.plain)
                 .navigationTitle("검색 리스트 페이지")
             }
+//검색창클릭시 x 버튼
             .searchable(text: $searchText)
-            Button(action: {
-                presentationMode.wrappedValue.dismiss()
-            }, label: {
-                Image(systemName: "xmark")
-                    .imageScale(.large)
-                    .padding()
-            })
-            .accentColor(.blue)
+//            Button(action: {
+//                presentationMode.wrappedValue.dismiss()
+//            }, label: {
+//                Image(systemName: "xmark")
+//                    .imageScale(.large)
+//                    .padding()
+//            })
+//            .accentColor(.blue)
         }
         }
     }

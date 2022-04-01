@@ -1,10 +1,3 @@
-//
-//  BookMarkList.swift
-//  HowAboutToday
-//
-//  Created by calmkeen on 2022/03/22.
-//
-
 import SwiftUI
 
 struct BookMarkList: View {

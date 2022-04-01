@@ -8,6 +8,9 @@
 import Foundation
 import SwiftUI
 
+
+ private var searchText = ""
+
 class list_test: NSObject,ObservableObject{
     var a : String = "test a"
     var b : String = "test b"
