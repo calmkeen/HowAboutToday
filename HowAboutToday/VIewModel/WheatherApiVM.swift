@@ -17,7 +17,7 @@ protocol wheatherDelegate {
     func didfailwithError(error: Error)
 }
 struct WheatherAPIManger {
-    let API = "https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&units=metric&appid=c4741b40b8cea1d2d6826c5489a84369"
+    let API = "https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&units=metric&appid=key"
     
     var delegate: wheatherDelegate?
     
